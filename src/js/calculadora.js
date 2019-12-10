@@ -29,6 +29,10 @@ var Calculadora = {
       return 0;
     }
 
+    if(!num2) {
+      return "Erro";
+    }
+
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
     return num1 / num2;

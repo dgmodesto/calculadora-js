@@ -24,4 +24,9 @@ describe('Suíte de testes de divisão', () => {
   it('deve retornar 0 para valor 2 inválido', () => {
     expect(Calculadora.dividir(10, undefined)).toEqual(0);
   });
+
+  
+  it('deve retornar "Erro" para divisão por 0', () => {
+    expect(Calculadora.dividir(10, 0)).toEqual("Erro");
+  });
 });
