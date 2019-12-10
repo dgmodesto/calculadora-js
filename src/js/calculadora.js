@@ -29,8 +29,8 @@ var Calculadora = {
       return 0;
     }
 
-    if(!num2) {
-      return "Erro";
+    if (!num2) {
+      return 'Erro';
     }
 
     num1 = parseFloat(num1);
@@ -39,12 +39,13 @@ var Calculadora = {
   },
 
   multiplicar: function(num1, num2) {
-    if (isNaN(num1) || isNaN(num2)) {
+    if (isNaN(num1) || isNaN(num2) || !num2) {
       return 0;
     }
-
+    
     num1 = parseFloat(num1);
-    num2 = parseFloat(num2);    
+    num2 = parseFloat(num2);   
+
     return num1 * num2;
   }
 };
